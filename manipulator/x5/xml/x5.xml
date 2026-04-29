@@ -1,0 +1,114 @@
+<mujoco model="x5">
+    <compiler angle="radian" meshdir="../meshes" autolimits="true" />
+    <option integrator="implicitfast" cone="elliptic" impratio="10" />
+
+    <default>
+        <default class="x5">
+            <joint frictionloss="0.3" armature="0.005" />
+            <position inheritrange="1" forcerange="-100 100" />
+            <default class="finger">
+                <joint frictionloss="0" type="slide" />
+                <position forcerange="-10 10" />
+            </default>
+            <default class="visual">
+                <geom group="2" type="mesh" contype="0" conaffinity="0" density="0" />
+            </default>
+            <default class="collision">
+                <geom group="3" type="capsule" />
+            </default>
+        </default>
+    </default>
+
+    <asset>
+        <material name="black_mat" rgba="0.1 0.1 0.1 1" />
+        <material name="silver_mat" rgba="0.65 0.65 0.65 1.0" />
+        <mesh name="base_link" file="base_link.obj" />
+        <mesh name="link1" file="link1.obj" />
+        <mesh name="link2" file="link2.obj" />
+        <mesh name="link3" file="link3.obj" />
+        <mesh name="link4" file="link4.obj" />
+        <mesh name="link5" file="link5.obj" />
+        <mesh name="link6" file="link6.obj" />
+        <mesh name="link7" file="link7.obj" />
+        <mesh name="link8" file="link8.obj" />
+    </asset>
+
+    <worldbody>
+        <body name="base_link">
+            <geom mesh="base_link" material="black_mat" class="visual" />
+            <geom mesh="base_link" class="collision" />
+            <body name="link1" pos="0 0 0.0605">
+                <inertial pos="0.0054231 -0.0080289 0.017086" quat="0.653281 0.653281 -0.270598 0.270598" mass="0.066982" diaginertia="9e-05 7e-05 3e-05" />
+                <joint name="joint1" pos="0 0 0" axis="0 0 1" range="-3.14 2.6" />
+                <geom mesh="link1" material="black_mat" class="visual" />
+                <geom mesh="link1" class="collision" />
+                <body name="link2" pos="0.02 0 0.04">
+                    <inertial pos="-0.13237 0.0020852 0.00010549" quat="7.64729e-05 0.706196 -0.000379919 0.708016" mass="1.0795" diaginertia="0.0160501 0.01599 0.000509891" />
+                    <joint name="joint2" pos="0 0 0" axis="0 1 0" range="-0.1 3.6" />
+                    <geom mesh="link2" material="black_mat" class="visual" />
+                    <geom mesh="link2" class="collision" />
+                    <body name="link3" pos="-0.264 0 0" quat="-3.67321e-06 1 0 0">
+                        <inertial pos="0.18531 0.00068376 -0.051638" quat="0.223261 0.638184 0.206685 0.707218" mass="0.54534" diaginertia="0.00424842 0.004221 0.000320578" />
+                        <joint name="joint3" pos="0 0 0" axis="0 1 0" range="0 3.14" />
+                        <geom mesh="link3" material="silver_mat" class="visual" />
+                        <geom mesh="link3" class="collision" />
+                        <body name="link4" pos="0.245 0 -0.056">
+                            <inertial pos="0.040231 0.0044807 -0.035335" quat="0.911288 -0.0751532 0.308689 -0.261949" mass="0.11714" diaginertia="0.000275643 0.00021286 7.14977e-05" />
+                            <joint name="joint4" pos="0 0 0" axis="0 1 0" range="-1.3 1.3" />
+                            <geom mesh="link4" material="black_mat" class="visual" />
+                            <geom mesh="link4" class="collision" />
+                            <body name="link5" pos="0.06775 0.0005 -0.0865">
+                                <inertial pos="0.003612 -1.5455e-05 0.055214" quat="0.998188 0 -0.0601752 0" mass="0.63488" diaginertia="0.000838471 0.00082 0.000251529" />
+                                <joint name="joint5" pos="0 0 0" axis="0 0 1" range="-1.57 1.57" />
+                                <geom mesh="link5" material="black_mat" class="visual" />
+                                <geom mesh="link5" class="collision" />
+                                <body name="link6" pos="0.02895 0 0.0865" quat="-3.67321e-06 -1 0 0">
+                                    <inertial pos="0.041697 2.4368e-05 0.00014464" quat="0.5 0.5 -0.5 0.5" mass="0.44089" diaginertia="0.0005 0.00038 0.00028" />
+                                    <joint name="joint6" pos="0 0 0" axis="1 0 0" range="-2.1 2.1" />
+                                    <geom mesh="link6" material="black_mat" class="visual" />
+                                    <geom mesh="link6" class="collision" />
+                                    <body name="link7" pos="0.08657 0.024896 -0.0002436">
+                                        <inertial pos="-0.00035522 -0.007827 -0.0029883" quat="0.5 0.5 0.5 0.5" mass="0.064798" diaginertia="3e-05 3e-05 2e-05" />
+                                        <joint name="joint7" pos="0 0 0" axis="0 1 0" type="slide" range="0 0.044" />
+                                        <geom mesh="link7" material="black_mat" class="visual" />
+                                        <geom type="box" size=".02 .002 .00525" pos="0.05 -0.023 0" rgba="1 0 0 1" class="collision" />
+                                        <geom type="box" size=".015 .002 .018" pos="0.015 -0.023 0" rgba="0 0 1 1" class="collision" />
+                                    </body>
+                                    <body name="link8" pos="0.08657 -0.0249 -0.00024366">
+                                        <inertial pos="-0.00035522 0.0078277 0.0024201" quat="0.5 0.5 0.5 0.5" mass="0.064798" diaginertia="3e-05 3e-05 2e-05" />
+                                        <joint name="joint8" pos="0 0 0" axis="0 1 0" type="slide" range="-0.044 0" />
+                                        <geom mesh="link8" material="black_mat" class="visual" />
+                                        <geom type="box" size=".02 .002 .00525" pos="0.05 0.023 0" rgba="1 0 0 1" class="collision" />
+                                        <geom type="box" size=".015 .002 .018" pos="0.015 0.023 0" rgba="0 0 1 1" class="collision" />
+                                    </body>
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+    </worldbody>
+
+    <contact>
+        <exclude body1="base_link" body2="link1" />
+    </contact>
+
+    <equality>
+        <joint joint1="joint7" joint2="joint8" polycoef="0 -1 0 0 0" />
+    </equality>
+
+    <actuator>
+        <position name="joint1" joint="joint1" class="x5" kp="80" kv="5" />
+        <position name="joint2" joint="joint2" class="x5" kp="80" kv="5" />
+        <position name="joint3" joint="joint3" class="x5" kp="80" kv="5" />
+        <position name="joint4" joint="joint4" class="x5" kp="40" kv="5" />
+        <position name="joint5" joint="joint5" class="x5" kp="10" kv="1.5" />
+        <position name="joint6" joint="joint6" class="x5" kp="10" kv="1.5" />
+        <position name="gripper" joint="joint7" class="finger" kp="40" kv="5" />
+    </actuator>
+
+    <keyframe>
+        <key name="home" qpos="0 0.251 0.314 0 0 0 0.044 -0.044" ctrl="0 0.251 0.314 0 0 0 0.044" />
+    </keyframe>
+</mujoco>
