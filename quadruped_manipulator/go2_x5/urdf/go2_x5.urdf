@@ -21,7 +21,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/base_0.obj" />
+                <mesh filename="../meshes/base_0.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -30,7 +30,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/base_1.obj" />
+                <mesh filename="../meshes/base_1.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -39,7 +39,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/base_2.obj" />
+                <mesh filename="../meshes/base_2.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -48,7 +48,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/base_3.obj" />
+                <mesh filename="../meshes/base_3.obj" />
             </geometry>
             <material name="white">
                 <color rgba="1 1 1 1" />
@@ -57,7 +57,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/base_4.obj" />
+                <mesh filename="../meshes/base_4.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -117,7 +117,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_0.obj" />
+                <mesh filename="../meshes/hip_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -126,7 +126,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_1.obj" />
+                <mesh filename="../meshes/hip_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -155,7 +155,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_0.obj" />
+                <mesh filename="../meshes/thigh_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -164,7 +164,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_1.obj" />
+                <mesh filename="../meshes/thigh_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -193,7 +193,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_0.obj" />
+                <mesh filename="../meshes/calf_0.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -202,7 +202,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_1.obj" />
+                <mesh filename="../meshes/calf_1.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -259,7 +259,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/foot.obj" />
+                <mesh filename="../meshes/foot.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -287,7 +287,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.1415 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_0.obj" />
+                <mesh filename="../meshes/hip_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -296,7 +296,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.1415 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_1.obj" />
+                <mesh filename="../meshes/hip_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -325,7 +325,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_mirror_0.obj" />
+                <mesh filename="../meshes/thigh_mirror_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -334,7 +334,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_mirror_1.obj" />
+                <mesh filename="../meshes/thigh_mirror_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -363,7 +363,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_mirror_0.obj" />
+                <mesh filename="../meshes/calf_mirror_0.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -372,7 +372,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_mirror_1.obj" />
+                <mesh filename="../meshes/calf_mirror_1.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -429,7 +429,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/foot.obj" />
+                <mesh filename="../meshes/foot.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -457,7 +457,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 3.1415 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_0.obj" />
+                <mesh filename="../meshes/hip_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -466,7 +466,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 3.1415 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_1.obj" />
+                <mesh filename="../meshes/hip_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -495,7 +495,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_0.obj" />
+                <mesh filename="../meshes/thigh_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -504,7 +504,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_1.obj" />
+                <mesh filename="../meshes/thigh_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -533,7 +533,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_0.obj" />
+                <mesh filename="../meshes/calf_0.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -542,7 +542,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_1.obj" />
+                <mesh filename="../meshes/calf_1.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -599,7 +599,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/foot.obj" />
+                <mesh filename="../meshes/foot.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -627,7 +627,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.1415 3.1415 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_0.obj" />
+                <mesh filename="../meshes/hip_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -636,7 +636,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="3.1415 3.1415 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/hip_1.obj" />
+                <mesh filename="../meshes/hip_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -665,7 +665,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_mirror_0.obj" />
+                <mesh filename="../meshes/thigh_mirror_0.obj" />
             </geometry>
             <material name="metal">
                 <color rgba="0.9 0.95 0.95 1" />
@@ -674,7 +674,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/thigh_mirror_1.obj" />
+                <mesh filename="../meshes/thigh_mirror_1.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -703,7 +703,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_mirror_0.obj" />
+                <mesh filename="../meshes/calf_mirror_0.obj" />
             </geometry>
             <material name="gray">
                 <color rgba="0.671705 0.692426 0.774270 1" />
@@ -712,7 +712,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/calf_mirror_1.obj" />
+                <mesh filename="../meshes/calf_mirror_1.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -769,7 +769,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../quadruped/go2/meshes/foot.obj" />
+                <mesh filename="../meshes/foot.obj" />
             </geometry>
             <material name="black">
                 <color rgba="0 0 0 1" />
@@ -825,7 +825,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/base_link.obj" />
+                <mesh filename="../meshes/base_link.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -852,7 +852,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link1.obj" />
+                <mesh filename="../meshes/link1.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -875,7 +875,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link2.obj" />
+                <mesh filename="../meshes/link2.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -916,7 +916,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link3.obj" />
+                <mesh filename="../meshes/link3.obj" />
             </geometry>
             <material name="silver_mat" />
         </visual>
@@ -951,7 +951,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link4.obj" />
+                <mesh filename="../meshes/link4.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -980,7 +980,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link5.obj" />
+                <mesh filename="../meshes/link5.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -1009,7 +1009,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link6.obj" />
+                <mesh filename="../meshes/link6.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -1038,7 +1038,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link7.obj" />
+                <mesh filename="../meshes/link7.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>
@@ -1073,7 +1073,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="../../../manipulator/x5/meshes/link8.obj" />
+                <mesh filename="../meshes/link8.obj" />
             </geometry>
             <material name="black_mat" />
         </visual>

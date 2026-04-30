@@ -1,5 +1,5 @@
 <mujoco model="go2_x5">
-  <compiler angle="radian" autolimits="true" />
+  <compiler angle="radian" meshdir="../meshes" autolimits="true" />
 
   <option cone="elliptic" impratio="100" />
 
@@ -57,31 +57,31 @@
     <material name="black_mat" rgba="0.1 0.1 0.1 1" />
     <material name="silver_mat" rgba="0.65 0.65 0.65 1.0" />
 
-    <mesh file="../../../quadruped/go2/meshes/base_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/base_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/base_2.obj" />
-    <mesh file="../../../quadruped/go2/meshes/base_3.obj" />
-    <mesh file="../../../quadruped/go2/meshes/base_4.obj" />
-    <mesh file="../../../quadruped/go2/meshes/hip_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/hip_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/thigh_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/thigh_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/thigh_mirror_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/thigh_mirror_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/calf_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/calf_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/calf_mirror_0.obj" />
-    <mesh file="../../../quadruped/go2/meshes/calf_mirror_1.obj" />
-    <mesh file="../../../quadruped/go2/meshes/foot.obj" />
-    <mesh name="base_link" file="../../../manipulator/x5/meshes/base_link.obj" />
-    <mesh name="link1" file="../../../manipulator/x5/meshes/link1.obj" />
-    <mesh name="link2" file="../../../manipulator/x5/meshes/link2.obj" />
-    <mesh name="link3" file="../../../manipulator/x5/meshes/link3.obj" />
-    <mesh name="link4" file="../../../manipulator/x5/meshes/link4.obj" />
-    <mesh name="link5" file="../../../manipulator/x5/meshes/link5.obj" />
-    <mesh name="link6" file="../../../manipulator/x5/meshes/link6.obj" />
-    <mesh name="link7" file="../../../manipulator/x5/meshes/link7.obj" />
-    <mesh name="link8" file="../../../manipulator/x5/meshes/link8.obj" />
+    <mesh file="base_0.obj" />
+    <mesh file="base_1.obj" />
+    <mesh file="base_2.obj" />
+    <mesh file="base_3.obj" />
+    <mesh file="base_4.obj" />
+    <mesh file="hip_0.obj" />
+    <mesh file="hip_1.obj" />
+    <mesh file="thigh_0.obj" />
+    <mesh file="thigh_1.obj" />
+    <mesh file="thigh_mirror_0.obj" />
+    <mesh file="thigh_mirror_1.obj" />
+    <mesh file="calf_0.obj" />
+    <mesh file="calf_1.obj" />
+    <mesh file="calf_mirror_0.obj" />
+    <mesh file="calf_mirror_1.obj" />
+    <mesh file="foot.obj" />
+    <mesh name="base_link" file="base_link.obj" />
+    <mesh name="link1" file="link1.obj" />
+    <mesh name="link2" file="link2.obj" />
+    <mesh name="link3" file="link3.obj" />
+    <mesh name="link4" file="link4.obj" />
+    <mesh name="link5" file="link5.obj" />
+    <mesh name="link6" file="link6.obj" />
+    <mesh name="link7" file="link7.obj" />
+    <mesh name="link8" file="link8.obj" />
   </asset>
 
   <worldbody>
