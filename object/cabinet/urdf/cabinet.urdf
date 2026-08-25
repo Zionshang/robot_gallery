@@ -1,0 +1,336 @@
+<?xml version="1.0"?>
+<robot name="link_robot">
+  <link name="base_0">
+    <inertial>
+      <origin xyz="-0.008727 -0.000038 0.004182" rpy="0 0 0" />
+      <mass value="1.000000" />
+      <inertia ixx="0.058038" iyy="0.037944" izz="0.039906" ixy="0.0" ixz="0.0" iyz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.000000 -0.000000 -0.000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../dae/base_0/base_0.dae" scale="0.546409536 0.599129190 0.587746618" />
+      </geometry>
+    </visual>
+    <collision name="cabinet_back_panel">
+      <origin xyz="-0.163 0.000 0.021" rpy="0 0 0" />
+      <geometry>
+        <box size="0.016 0.580 0.516" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_left_side_panel">
+      <origin xyz="-0.013 -0.285 0.021" rpy="0 0 0" />
+      <geometry>
+        <box size="0.313 0.030 0.517" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_right_side_panel">
+      <origin xyz="-0.013 0.285 0.021" rpy="0 0 0" />
+      <geometry>
+        <box size="0.313 0.030 0.517" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_center_panel">
+      <origin xyz="-0.012 0.003 0.023" rpy="0 0 0" />
+      <geometry>
+        <box size="0.295 0.034 0.517" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_top_panel">
+      <origin xyz="-0.009 0.000 0.280" rpy="0 0 0" />
+      <geometry>
+        <box size="0.344 0.600 0.029" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_bottom_panel">
+      <origin xyz="-0.009 0.000 -0.238" rpy="0 0 0" />
+      <geometry>
+        <box size="0.344 0.600 0.020" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_upper_drawer_rail">
+      <origin xyz="0.128 0.145 0.111" rpy="0 0 0" />
+      <geometry>
+        <box size="0.020 0.260 0.020" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_lower_drawer_rail">
+      <origin xyz="0.128 0.145 -0.051" rpy="0 0 0" />
+      <geometry>
+        <box size="0.020 0.260 0.020" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_front_left_foot">
+      <origin xyz="0.135 -0.260 -0.267" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040 0.050 0.038" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_front_right_foot">
+      <origin xyz="0.135 0.260 -0.267" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040 0.050 0.038" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_back_left_foot">
+      <origin xyz="-0.145 -0.260 -0.267" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040 0.050 0.038" />
+      </geometry>
+    </collision>
+    <collision name="cabinet_back_right_foot">
+      <origin xyz="-0.145 0.260 -0.267" rpy="0 0 0" />
+      <geometry>
+        <box size="0.040 0.050 0.038" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="door_1">
+    <inertial>
+      <origin xyz="0.024528 0.136634 -0.085056" rpy="0 0 0" />
+      <mass value="1.000000" />
+      <inertia ixx="0.027232" iyy="0.021209" izz="0.006424" ixy="0.0" ixz="0.0" iyz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.119816 0.275279 -0.104384" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../dae/door_1/door_1.dae" scale="0.546409536 0.599129190 0.587746618" />
+      </geometry>
+    </visual>
+    <collision name="door_panel_collision">
+      <origin xyz="0.0202 0.1366 -0.0850" rpy="0 0 0" />
+      <geometry>
+        <box size="0.014 0.274 0.503" />
+      </geometry>
+    </collision>
+    <collision name="door_handle_grip">
+      <origin xyz="0.0460 0.249724 0.061438" rpy="0 0 0" />
+      <geometry>
+        <box size="0.009 0.016 0.110" />
+      </geometry>
+    </collision>
+    <collision name="door_handle_lower_mount">
+      <origin xyz="0.0345 0.249724 0.004438" rpy="0 0 0" />
+      <geometry>
+        <box size="0.023 0.016 0.012" />
+      </geometry>
+    </collision>
+    <collision name="door_handle_upper_mount">
+      <origin xyz="0.0345 0.249724 0.118438" rpy="0 0 0" />
+      <geometry>
+        <box size="0.023 0.016 0.012" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="drawer_1">
+    <inertial>
+      <origin xyz="-0.152186 -0.000001 0.000001" rpy="0 0 0" />
+      <mass value="1.000000" />
+      <inertia ixx="0.008583" iyy="0.009777" izz="0.014248" ixy="0.0" ixz="0.0" iyz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.000000 -0.000000 -0.000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../dae/drawer_1/drawer_1.dae" scale="0.546409536 0.599129190 0.587746618" />
+      </geometry>
+    </visual>
+    <collision name="drawer_1_front_panel">
+      <origin xyz="-0.028 0.000 0.000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.016 0.280 0.157" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_bottom_panel">
+      <origin xyz="-0.169 0.009 -0.049" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.234 0.006" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_back_panel">
+      <origin xyz="-0.3035 0.009 0.004" rpy="0 0 0" />
+      <geometry>
+        <box size="0.007 0.234 0.110" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_left_panel">
+      <origin xyz="-0.169 -0.107 0.004" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.006 0.110" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_right_panel">
+      <origin xyz="-0.169 0.126 0.004" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.006 0.110" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_handle_grip">
+      <origin xyz="-0.0030 0.009720 0.004263" rpy="0 0 0" />
+      <geometry>
+        <box size="0.008 0.101 0.017" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_handle_left_mount">
+      <origin xyz="-0.0115 -0.038780 0.004263" rpy="0 0 0" />
+      <geometry>
+        <box size="0.021 0.014 0.017" />
+      </geometry>
+    </collision>
+    <collision name="drawer_1_handle_right_mount">
+      <origin xyz="-0.0115 0.058220 0.004263" rpy="0 0 0" />
+      <geometry>
+        <box size="0.021 0.014 0.017" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="drawer_2">
+    <inertial>
+      <origin xyz="-0.152252 0.000037 -0.000010" rpy="0 0 0" />
+      <mass value="1.000000" />
+      <inertia ixx="0.008669" iyy="0.009823" izz="0.014295" ixy="0.0" ixz="0.0" iyz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.000000 -0.000000 -0.000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../dae/drawer_2/drawer_2.dae" scale="0.546409536 0.599129190 0.587746618" />
+      </geometry>
+    </visual>
+    <collision name="drawer_2_front_panel">
+      <origin xyz="-0.028 0.000 0.000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.016 0.281 0.159" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_bottom_panel">
+      <origin xyz="-0.169 0.009 -0.057" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.233 0.006" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_back_panel">
+      <origin xyz="-0.304 0.009 -0.002" rpy="0 0 0" />
+      <geometry>
+        <box size="0.007 0.233 0.112" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_left_panel">
+      <origin xyz="-0.169 -0.107 -0.002" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.006 0.112" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_right_panel">
+      <origin xyz="-0.169 0.125 -0.002" rpy="0 0 0" />
+      <geometry>
+        <box size="0.270 0.006 0.112" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_handle_grip">
+      <origin xyz="-0.0030 0.009268 0.002335" rpy="0 0 0" />
+      <geometry>
+        <box size="0.008 0.095 0.012" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_handle_left_mount">
+      <origin xyz="-0.0120 -0.036232 0.002335" rpy="0 0 0" />
+      <geometry>
+        <box size="0.022 0.014 0.012" />
+      </geometry>
+    </collision>
+    <collision name="drawer_2_handle_right_mount">
+      <origin xyz="-0.0120 0.054768 0.002335" rpy="0 0 0" />
+      <geometry>
+        <box size="0.022 0.014 0.012" />
+      </geometry>
+    </collision>
+  </link>
+  <link name="drawer_3">
+    <inertial>
+      <origin xyz="-0.151711 0.000001 0.000008" rpy="0 0 0" />
+      <mass value="1.000000" />
+      <inertia ixx="0.009102" iyy="0.010249" izz="0.014192" ixy="0.0" ixz="0.0" iyz="0.0" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.000000 -0.000000 -0.000000" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../dae/drawer_3/drawer_3.dae" scale="0.546409536 0.599129190 0.587746618" />
+      </geometry>
+    </visual>
+    <collision name="drawer_3_front_panel">
+      <origin xyz="-0.027 0.000 0.000" rpy="0 0 0" />
+      <geometry>
+        <box size="0.016 0.280 0.176" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_bottom_panel">
+      <origin xyz="-0.169 0.009 -0.071" rpy="0 0 0" />
+      <geometry>
+        <box size="0.271 0.234 0.006" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_back_panel">
+      <origin xyz="-0.303 0.009 -0.003" rpy="0 0 0" />
+      <geometry>
+        <box size="0.007 0.234 0.140" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_left_panel">
+      <origin xyz="-0.169 -0.107 -0.003" rpy="0 0 0" />
+      <geometry>
+        <box size="0.271 0.006 0.140" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_right_panel">
+      <origin xyz="-0.169 0.125 -0.003" rpy="0 0 0" />
+      <geometry>
+        <box size="0.271 0.006 0.140" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_handle_grip">
+      <origin xyz="-0.0030 0.010112 0.018757" rpy="0 0 0" />
+      <geometry>
+        <box size="0.008 0.096 0.013" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_handle_left_mount">
+      <origin xyz="-0.0115 -0.035888 0.018757" rpy="0 0 0" />
+      <geometry>
+        <box size="0.021 0.014 0.013" />
+      </geometry>
+    </collision>
+    <collision name="drawer_3_handle_right_mount">
+      <origin xyz="-0.0115 0.056112 0.018757" rpy="0 0 0" />
+      <geometry>
+        <box size="0.021 0.014 0.013" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="door_joint_1" type="revolute">
+    <parent link="base_0" />
+    <child link="door_1" />
+    <origin xyz="0.119816 -0.275279 0.104384" rpy="0 0 0" />
+    <axis xyz="0.000000 0.000000 1.000000" />
+    <limit lower="-1.379034" upper="0.000000" effort="50.000000" velocity="1.000000" />
+  </joint>
+  <joint name="drawer_joint_1" type="prismatic">
+    <parent link="base_0" />
+    <child link="drawer_1" />
+    <origin xyz="0.164706 0.139857 0.193753" rpy="0 0 0" />
+    <axis xyz="-0.999816 -0.018917 0.003302" />
+    <limit lower="-0.22" upper="0.000000" effort="50.000000" velocity="0.546426" />
+  </joint>
+  <joint name="drawer_joint_2" type="prismatic">
+    <parent link="base_0" />
+    <child link="drawer_2" />
+    <origin xyz="0.165042 0.140160 0.027481" rpy="0 0 0" />
+    <axis xyz="-0.999879 -0.014008 0.006779" />
+    <limit lower="-0.22" upper="0.000000" effort="50.000000" velocity="0.546421" />
+  </joint>
+  <joint name="drawer_joint_3" type="prismatic">
+    <parent link="base_0" />
+    <child link="drawer_3" />
+    <origin xyz="0.163554 0.139967 -0.145939" rpy="0 0 0" />
+    <axis xyz="-0.999955 -0.009328 0.001932" />
+    <limit lower="-0.22" upper="0.000000" effort="50.000000" velocity="0.546414" />
+  </joint>
+</robot>

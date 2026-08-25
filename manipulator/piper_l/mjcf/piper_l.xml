@@ -1,0 +1,95 @@
+<mujoco model="piper_l">
+  <compiler angle="radian" />
+  <asset>
+    <texture name="dae_texture_009" type="2d" file="piper_l_assets/gripper_link2_0da13508/part_000/material_0.png" />
+    <material name="dae_material_009" texture="dae_texture_009" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_008" type="2d" file="piper_l_assets/gripper_link1_b4aaf0e0/part_000/material_0.png" />
+    <material name="dae_material_008" texture="dae_texture_008" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_007" type="2d" file="piper_l_assets/gripper_base_bf0f29ce/part_000/material_0.png" />
+    <material name="dae_material_007" texture="dae_texture_007" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_006" type="2d" file="piper_l_assets/link6_42d54ac2/part_000/material_0.png" />
+    <material name="dae_material_006" texture="dae_texture_006" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_005" type="2d" file="piper_l_assets/link5_a019c6eb/part_000/material_0.png" />
+    <material name="dae_material_005" texture="dae_texture_005" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_004" type="2d" file="piper_l_assets/link4_7d07ffd6/part_000/material_0.png" />
+    <material name="dae_material_004" texture="dae_texture_004" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_003" type="2d" file="piper_l_assets/link3_fe20123b/part_000/material_0.png" />
+    <material name="dae_material_003" texture="dae_texture_003" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_002" type="2d" file="piper_l_assets/link2_5c77ff7d/part_000/material_0.png" />
+    <material name="dae_material_002" texture="dae_texture_002" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_001" type="2d" file="piper_l_assets/link1_4e6f3ab3/part_000/material_0.png" />
+    <material name="dae_material_001" texture="dae_texture_001" rgba="0.4 0.4 0.4 1" />
+    <texture name="dae_texture_000" type="2d" file="piper_l_assets/base_link_0e9d7d55/part_000/material_0.png" />
+    <material name="dae_material_000" texture="dae_texture_000" rgba="0.4 0.4 0.4 1" />
+    <mesh name="base_link_0e9d7d55_part_000" content_type="model/obj" file="piper_l_assets/base_link_0e9d7d55/part_000/base_link_0e9d7d55_part_000.obj" />
+    <mesh name="link1_4e6f3ab3_part_000" content_type="model/obj" file="piper_l_assets/link1_4e6f3ab3/part_000/link1_4e6f3ab3_part_000.obj" />
+    <mesh name="link2_5c77ff7d_part_000" content_type="model/obj" file="piper_l_assets/link2_5c77ff7d/part_000/link2_5c77ff7d_part_000.obj" />
+    <mesh name="link3_fe20123b_part_000" content_type="model/obj" file="piper_l_assets/link3_fe20123b/part_000/link3_fe20123b_part_000.obj" />
+    <mesh name="link4_7d07ffd6_part_000" content_type="model/obj" file="piper_l_assets/link4_7d07ffd6/part_000/link4_7d07ffd6_part_000.obj" />
+    <mesh name="link5_a019c6eb_part_000" content_type="model/obj" file="piper_l_assets/link5_a019c6eb/part_000/link5_a019c6eb_part_000.obj" />
+    <mesh name="link6_42d54ac2_part_000" content_type="model/obj" file="piper_l_assets/link6_42d54ac2/part_000/link6_42d54ac2_part_000.obj" />
+    <mesh name="gripper_base_bf0f29ce_part_000" content_type="model/obj" file="piper_l_assets/gripper_base_bf0f29ce/part_000/gripper_base_bf0f29ce_part_000.obj" />
+    <mesh name="gripper_link1_b4aaf0e0_part_000" content_type="model/obj" file="piper_l_assets/gripper_link1_b4aaf0e0/part_000/gripper_link1_b4aaf0e0_part_000.obj" />
+    <mesh name="gripper_link1_convex" content_type="model/stl" file="../meshes/stl/gripper_link1_convex.stl" />
+    <mesh name="gripper_link2_0da13508_part_000" content_type="model/obj" file="piper_l_assets/gripper_link2_0da13508/part_000/gripper_link2_0da13508_part_000.obj" />
+    <mesh name="gripper_link2_convex" content_type="model/stl" file="../meshes/stl/gripper_link2_convex.stl" />
+  </asset>
+  <worldbody>
+    <geom name="base_link_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="base_link_0e9d7d55_part_000" material="dae_material_000" />
+    <geom name="base_link_collision_000" size="0.05 0.045" pos="-0.01 0 0.045" type="cylinder" group="3" />
+    <body name="link1" pos="0 0 0.123">
+      <inertial pos="0.00032 -0.00041 -0.00348" quat="0.737007 0.671914 -0.0484837 0.0547877" mass="0.71" diaginertia="0.0005012 0.00045752 0.00040836" />
+      <joint name="joint1" range="-2.61799 2.61799" actuatorfrcrange="-100 100" />
+      <geom name="link1_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link1_4e6f3ab3_part_000" material="dae_material_001" />
+      <geom name="link1_collision_000" size="0.03 0.05" quat="0.707107 0.707106 0 0" type="cylinder" group="3" />
+      <body name="link2" quat="0.047971 -0.0479709 -0.705478 -0.705478">
+        <inertial pos="0.25852 -0.00861 0.00126" quat="0.479919 0.532436 0.466857 0.517913" mass="1.16" diaginertia="0.0676841 0.0675582 0.00106833" />
+        <joint name="joint2" range="0 3.14159" actuatorfrcrange="-100 100" />
+        <geom name="link2_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link2_5c77ff7d_part_000" material="dae_material_002" />
+        <geom name="link2_collision_000" size="0.02 0.02 0.1" pos="0.16 -0.022 0" quat="0.705119 0.0529833 0.705119 -0.0529833" type="box" group="3" />
+        <body name="link3" pos="0.33823 0 0" quat="0.624016 0 0 -0.781412">
+          <inertial pos="-0.01999 -0.20808 -0.00053" quat="0.70534 0.70619 0.0352022 0.0505251" mass="0.5" diaginertia="0.0136724 0.0136332 0.000267444" />
+          <joint name="joint3" range="-2.96706 0" actuatorfrcrange="-100 100" />
+          <geom name="link3_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link3_fe20123b_part_000" material="dae_material_003" />
+          <geom name="link3_collision_000" size="0.03 0.05" type="cylinder" group="3" />
+          <geom name="link3_collision_001" size="0.02 0.02 0.12" pos="-0.02 -0.15 0" quat="0.707388 0.706825 0 0" type="box" group="3" />
+          <body name="link4" pos="-0.02301 -0.32075 0" quat="0.707107 0.707107 0 0">
+            <inertial pos="0.00013 -0.00076 -0.00394" quat="0.727848 0.0276487 -0.0387803 0.684082" mass="0.38" diaginertia="0.000189565 0.00017841 0.000145735" />
+            <joint name="joint4" range="-2.21657 2.21657" actuatorfrcrange="-100 100" />
+            <geom name="link4_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link4_7d07ffd6_part_000" material="dae_material_004" />
+            <geom name="link4_collision_000" size="0.03 0.03" quat="0.707388 0.706825 0 0" type="cylinder" group="3" />
+            <body name="link5" quat="0.707107 -0.707107 0 0">
+              <inertial pos="0.00018 -0.06104 -0.00227" quat="0.709375 0.704813 -0.00301298 0.00422225" mass="0.39" diaginertia="0.00172319 0.00171178 0.000179292" />
+              <joint name="joint5" range="-1.56207 1.56207" actuatorfrcrange="-100 100" />
+              <geom name="link5_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link5_a019c6eb_part_000" material="dae_material_005" />
+              <geom name="link5_collision_000" size="0.03 0.025" pos="0 -0.06 0" quat="0.707388 0.706825 0 0" type="cylinder" group="3" />
+              <body name="link6" pos="0 -0.091 0" quat="0.707107 0.707107 0 0">
+                <inertial pos="-0.000181451 8.01893e-05 0.0316207" quat="0.999993 3.00562e-05 0.0013507 0.00337343" mass="0.457" diaginertia="0.00245852 0.00210875 0.000705927" />
+                <joint name="joint6" range="-2.0944 2.0944" actuatorfrcrange="-100 100" />
+                <geom name="link6_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="link6_42d54ac2_part_000" material="dae_material_006" />
+                <geom name="gripper_base_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="gripper_base_bf0f29ce_part_000" material="dae_material_007" />
+                <geom name="gripper_base_collision_000" size="0.03 0.025" pos="0 0 0.025" type="cylinder" group="3" />
+                <geom name="gripper_base_collision_001" size="0.01 0.08 0.004" pos="0 0 0.052" type="box" group="3" />
+                <body name="gripper_link1" pos="0 0 0.1358" quat="0.707107 0.707107 0 0">
+                  <inertial pos="0.000651232 -0.049193 0.00972259" quat="0.477798 0.572974 -0.518028 0.418398" mass="0.025" diaginertia="7.74531e-05 7.36783e-05 5.0886e-06" />
+                  <joint name="gripper_joint1" type="slide" range="0 0.05" actuatorfrcrange="-10 10" />
+                  <geom name="gripper_link1_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="gripper_link1_b4aaf0e0_part_000" material="dae_material_008" />
+                  <geom name="gripper_link1_collision_000" type="mesh" mesh="gripper_link1_convex" group="3" />
+                </body>
+                <body name="gripper_link2" pos="0 0 0.1358" quat="1.89469e-08 1.89469e-08 -0.707107 -0.707107">
+                  <inertial pos="0.000651232 -0.049193 0.00972259" quat="0.477798 0.572974 -0.518028 0.418398" mass="0.025" diaginertia="7.74531e-05 7.36783e-05 5.0886e-06" />
+                  <joint name="gripper_joint2" type="slide" range="-0.05 0" actuatorfrcrange="-10 10" axis="0 0 -1" />
+                  <geom name="gripper_link2_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="gripper_link2_0da13508_part_000" material="dae_material_009" />
+                  <geom name="gripper_link2_collision_000" type="mesh" mesh="gripper_link2_convex" group="3" />
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <equality>
+    <joint joint1="gripper_joint2" joint2="gripper_joint1" polycoef="0 -1 0 0 0" />
+  </equality>
+</mujoco>

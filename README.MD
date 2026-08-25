@@ -10,10 +10,58 @@ Convex decompose an STL with CoACD:
 
 ```bash
 conda activate robot_gallery
-./scripts/convex_decompose_stl.py input.stl --resolution 2000 --max-convex-hull 1
+./scripts/convex_decompose_stl.py \
+  input.stl \
+  --resolution 2000 \
+  --max-convex-hull 1
 ```
 
 Output: `input_convex/input_convex_000.stl`, etc.
+
+Convert a URDF to MJCF with MuJoCo's built-in compiler:
+
+```bash
+./scripts/urdf_to_mjcf.py \
+  object/cabinet/urdf/cabinet.urdf \
+  object/cabinet/mjcf/cabinet.xml \
+  --keep-visuals \
+  --root-pos 0 0 0.286 \
+  --disable-self-collision \
+  --force
+```
+
+The script also writes `scene.xml` next to the converted model and opens that
+scene automatically in the MuJoCo viewer. Use `--no-viewer` for conversion only,
+`--keep-visuals` to retain URDF visual geometry, and `--force` to overwrite
+existing model and scene files. With `--keep-visuals`, DAE meshes are converted
+to OBJ automatically; their diffuse textures and solid colors are preserved in
+the generated MJCF. Converted OBJ, MTL, and texture files are stored in
+`<output_stem>_assets/`. Robot visual geoms use group 2 and collision geoms use
+group 3. URDF mimic joints are converted automatically to MuJoCo joint equality
+constraints. DAE conversion requires `trimesh[easy]`.
+
+Use `--root-pos X Y Z` to translate the whole model through a fixed root body.
+Use `--disable-self-collision` to exclude contacts between all robot bodies while
+keeping contacts with the ground and other models.
+
+To convert without opening the viewer, use the same command with `--no-viewer`:
+
+```bash
+./scripts/urdf_to_mjcf.py \
+  object/cabinet/urdf/cabinet.urdf \
+  object/cabinet/mjcf/cabinet.xml \
+  --keep-visuals \
+  --root-pos 0 0 0.286 \
+  --disable-self-collision \
+  --force \
+  --no-viewer
+```
+
+Open an existing MJCF model or scene directly:
+
+```bash
+./scripts/visualize_mjcf.py object/cabinet/mjcf/scene.xml
+```
 
 ## Preview
 

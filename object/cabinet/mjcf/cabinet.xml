@@ -1,0 +1,97 @@
+<mujoco model="link_robot">
+  <compiler angle="radian" />
+  <asset>
+    <texture name="dae_texture_004" type="2d" file="cabinet_assets/drawer_3_c92697fb/part_000/material_0.png" />
+    <material name="dae_material_004" texture="dae_texture_004" rgba="1 1 1 1" />
+    <texture name="dae_texture_003" type="2d" file="cabinet_assets/drawer_2_e1bab951/part_000/material_0.png" />
+    <material name="dae_material_003" texture="dae_texture_003" rgba="1 1 1 1" />
+    <texture name="dae_texture_002" type="2d" file="cabinet_assets/drawer_1_06b60f4d/part_000/material_0.png" />
+    <material name="dae_material_002" texture="dae_texture_002" rgba="1 1 1 1" />
+    <texture name="dae_texture_001" type="2d" file="cabinet_assets/door_1_73a3fc2b/part_000/material_0.png" />
+    <material name="dae_material_001" texture="dae_texture_001" rgba="1 1 1 1" />
+    <texture name="dae_texture_000" type="2d" file="cabinet_assets/base_0_a48c1f86/part_000/material_0.png" />
+    <material name="dae_material_000" texture="dae_texture_000" rgba="1 1 1 1" />
+    <mesh name="base_0_a48c1f86_part_000" content_type="model/obj" file="cabinet_assets/base_0_a48c1f86/part_000/base_0_a48c1f86_part_000.obj" scale="0.54641 0.599129 0.587747" />
+    <mesh name="door_1_73a3fc2b_part_000" content_type="model/obj" file="cabinet_assets/door_1_73a3fc2b/part_000/door_1_73a3fc2b_part_000.obj" scale="0.54641 0.599129 0.587747" />
+    <mesh name="drawer_1_06b60f4d_part_000" content_type="model/obj" file="cabinet_assets/drawer_1_06b60f4d/part_000/drawer_1_06b60f4d_part_000.obj" scale="0.54641 0.599129 0.587747" />
+    <mesh name="drawer_2_e1bab951_part_000" content_type="model/obj" file="cabinet_assets/drawer_2_e1bab951/part_000/drawer_2_e1bab951_part_000.obj" scale="0.54641 0.599129 0.587747" />
+    <mesh name="drawer_3_c92697fb_part_000" content_type="model/obj" file="cabinet_assets/drawer_3_c92697fb/part_000/drawer_3_c92697fb_part_000.obj" scale="0.54641 0.599129 0.587747" />
+  </asset>
+  <worldbody>
+    <body name="converted_root" pos="0 0 0.286">
+      <geom name="base_0_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="base_0_a48c1f86_part_000" material="dae_material_000" />
+      <geom name="cabinet_back_panel" size="0.008 0.29 0.258" pos="-0.163 0 0.021" type="box" group="3" />
+      <geom name="cabinet_left_side_panel" size="0.1565 0.015 0.2585" pos="-0.013 -0.285 0.021" type="box" group="3" />
+      <geom name="cabinet_right_side_panel" size="0.1565 0.015 0.2585" pos="-0.013 0.285 0.021" type="box" group="3" />
+      <geom name="cabinet_center_panel" size="0.1475 0.017 0.2585" pos="-0.012 0.003 0.023" type="box" group="3" />
+      <geom name="cabinet_top_panel" size="0.172 0.3 0.0145" pos="-0.009 0 0.28" type="box" group="3" />
+      <geom name="cabinet_bottom_panel" size="0.172 0.3 0.01" pos="-0.009 0 -0.238" type="box" group="3" />
+      <geom name="cabinet_upper_drawer_rail" size="0.01 0.13 0.01" pos="0.128 0.145 0.111" type="box" group="3" />
+      <geom name="cabinet_lower_drawer_rail" size="0.01 0.13 0.01" pos="0.128 0.145 -0.051" type="box" group="3" />
+      <geom name="cabinet_front_left_foot" size="0.02 0.025 0.019" pos="0.135 -0.26 -0.267" type="box" group="3" />
+      <geom name="cabinet_front_right_foot" size="0.02 0.025 0.019" pos="0.135 0.26 -0.267" type="box" group="3" />
+      <geom name="cabinet_back_left_foot" size="0.02 0.025 0.019" pos="-0.145 -0.26 -0.267" type="box" group="3" />
+      <geom name="cabinet_back_right_foot" size="0.02 0.025 0.019" pos="-0.145 0.26 -0.267" type="box" group="3" />
+      <body name="door_1" pos="0.119816 -0.275279 0.104384">
+        <inertial pos="0.024528 0.136634 -0.085056" mass="1" diaginertia="0.027232 0.021209 0.006424" />
+        <joint name="door_joint_1" range="-1.37903 0" actuatorfrcrange="-50 50" />
+        <geom name="door_1_visual_000_000" pos="-0.119816 0.275279 -0.104384" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="door_1_73a3fc2b_part_000" material="dae_material_001" />
+        <geom name="door_panel_collision" size="0.007 0.137 0.2515" pos="0.0202 0.1366 -0.085" type="box" group="3" />
+        <geom name="door_handle_grip" size="0.0045 0.008 0.055" pos="0.046 0.249724 0.061438" type="box" group="3" />
+        <geom name="door_handle_lower_mount" size="0.0115 0.008 0.006" pos="0.0345 0.249724 0.004438" type="box" group="3" />
+        <geom name="door_handle_upper_mount" size="0.0115 0.008 0.006" pos="0.0345 0.249724 0.118438" type="box" group="3" />
+      </body>
+      <body name="drawer_1" pos="0.164706 0.139857 0.193753">
+        <inertial pos="-0.152186 -1e-06 1e-06" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014248 0.009777 0.008583" />
+        <joint name="drawer_joint_1" type="slide" range="-0.22 0" actuatorfrcrange="-50 50" axis="-0.999816 -0.018917 0.003302" />
+        <geom name="drawer_1_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="drawer_1_06b60f4d_part_000" material="dae_material_002" />
+        <geom name="drawer_1_front_panel" size="0.008 0.14 0.0785" pos="-0.028 0 0" type="box" group="3" />
+        <geom name="drawer_1_bottom_panel" size="0.135 0.117 0.003" pos="-0.169 0.009 -0.049" type="box" group="3" />
+        <geom name="drawer_1_back_panel" size="0.0035 0.117 0.055" pos="-0.3035 0.009 0.004" type="box" group="3" />
+        <geom name="drawer_1_left_panel" size="0.135 0.003 0.055" pos="-0.169 -0.107 0.004" type="box" group="3" />
+        <geom name="drawer_1_right_panel" size="0.135 0.003 0.055" pos="-0.169 0.126 0.004" type="box" group="3" />
+        <geom name="drawer_1_handle_grip" size="0.004 0.0505 0.0085" pos="-0.003 0.00972 0.004263" type="box" group="3" />
+        <geom name="drawer_1_handle_left_mount" size="0.0105 0.007 0.0085" pos="-0.0115 -0.03878 0.004263" type="box" group="3" />
+        <geom name="drawer_1_handle_right_mount" size="0.0105 0.007 0.0085" pos="-0.0115 0.05822 0.004263" type="box" group="3" />
+      </body>
+      <body name="drawer_2" pos="0.165042 0.14016 0.027481">
+        <inertial pos="-0.152252 3.7e-05 -1e-05" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014295 0.009823 0.008669" />
+        <joint name="drawer_joint_2" type="slide" range="-0.22 0" actuatorfrcrange="-50 50" axis="-0.999879 -0.014008 0.006779" />
+        <geom name="drawer_2_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="drawer_2_e1bab951_part_000" material="dae_material_003" />
+        <geom name="drawer_2_front_panel" size="0.008 0.1405 0.0795" pos="-0.028 0 0" type="box" group="3" />
+        <geom name="drawer_2_bottom_panel" size="0.135 0.1165 0.003" pos="-0.169 0.009 -0.057" type="box" group="3" />
+        <geom name="drawer_2_back_panel" size="0.0035 0.1165 0.056" pos="-0.304 0.009 -0.002" type="box" group="3" />
+        <geom name="drawer_2_left_panel" size="0.135 0.003 0.056" pos="-0.169 -0.107 -0.002" type="box" group="3" />
+        <geom name="drawer_2_right_panel" size="0.135 0.003 0.056" pos="-0.169 0.125 -0.002" type="box" group="3" />
+        <geom name="drawer_2_handle_grip" size="0.004 0.0475 0.006" pos="-0.003 0.009268 0.002335" type="box" group="3" />
+        <geom name="drawer_2_handle_left_mount" size="0.011 0.007 0.006" pos="-0.012 -0.036232 0.002335" type="box" group="3" />
+        <geom name="drawer_2_handle_right_mount" size="0.011 0.007 0.006" pos="-0.012 0.054768 0.002335" type="box" group="3" />
+      </body>
+      <body name="drawer_3" pos="0.163554 0.139967 -0.145939">
+        <inertial pos="-0.151711 1e-06 8e-06" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014192 0.010249 0.009102" />
+        <joint name="drawer_joint_3" type="slide" range="-0.22 0" actuatorfrcrange="-50 50" axis="-0.999955 -0.009328 0.001932" />
+        <geom name="drawer_3_visual_000_000" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="drawer_3_c92697fb_part_000" material="dae_material_004" />
+        <geom name="drawer_3_front_panel" size="0.008 0.14 0.088" pos="-0.027 0 0" type="box" group="3" />
+        <geom name="drawer_3_bottom_panel" size="0.1355 0.117 0.003" pos="-0.169 0.009 -0.071" type="box" group="3" />
+        <geom name="drawer_3_back_panel" size="0.0035 0.117 0.07" pos="-0.303 0.009 -0.003" type="box" group="3" />
+        <geom name="drawer_3_left_panel" size="0.1355 0.003 0.07" pos="-0.169 -0.107 -0.003" type="box" group="3" />
+        <geom name="drawer_3_right_panel" size="0.1355 0.003 0.07" pos="-0.169 0.125 -0.003" type="box" group="3" />
+        <geom name="drawer_3_handle_grip" size="0.004 0.048 0.0065" pos="-0.003 0.010112 0.018757" type="box" group="3" />
+        <geom name="drawer_3_handle_left_mount" size="0.0105 0.007 0.0065" pos="-0.0115 -0.035888 0.018757" type="box" group="3" />
+        <geom name="drawer_3_handle_right_mount" size="0.0105 0.007 0.0065" pos="-0.0115 0.056112 0.018757" type="box" group="3" />
+      </body>
+    </body>
+  </worldbody>
+  <contact>
+    <exclude body1="converted_root" body2="door_1" />
+    <exclude body1="converted_root" body2="drawer_1" />
+    <exclude body1="converted_root" body2="drawer_2" />
+    <exclude body1="converted_root" body2="drawer_3" />
+    <exclude body1="door_1" body2="drawer_1" />
+    <exclude body1="door_1" body2="drawer_2" />
+    <exclude body1="door_1" body2="drawer_3" />
+    <exclude body1="drawer_1" body2="drawer_2" />
+    <exclude body1="drawer_1" body2="drawer_3" />
+    <exclude body1="drawer_2" body2="drawer_3" />
+  </contact>
+</mujoco>

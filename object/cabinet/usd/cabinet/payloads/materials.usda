@@ -1,0 +1,314 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    doc = """Generated from Composed Stage of root layer /tmp/tmpvoekw3q9/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/usdex_cabinet/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/temp_cabinet/cabinet.usd
+
+
+Generated from Composed Stage of root layer /home/zishang/robot_gallery/object/cabinet/usd/cabinet/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Scope "Materials"
+{
+    def Material "mat_0"
+    {
+        asset inputs:DiffuseTexture = @../Textures/image0.png@
+        float inputs:metallic = 0
+        float inputs:opacity = 1
+        float inputs:roughness = 0.5
+        token inputs:wrapMode = "repeat"
+        token outputs:displacement (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:displacement.connect = </Materials/mat_0/PreviewSurface.outputs:displacement>
+        token outputs:surface (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:surface.connect = </Materials/mat_0/PreviewSurface.outputs:surface>
+        token outputs:volume (
+            displayGroup = "Outputs"
+        )
+
+        def Shader "PreviewSurface" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPreviewSurface"
+            prepend color3f inputs:diffuseColor.connect = </Materials/mat_0/DiffuseTexture.outputs:rgb>
+            prepend float inputs:metallic.connect = </Materials/mat_0.inputs:metallic>
+            prepend float inputs:opacity.connect = </Materials/mat_0.inputs:opacity>
+            prepend float inputs:roughness.connect = </Materials/mat_0.inputs:roughness>
+            token outputs:displacement
+            token outputs:surface
+        }
+
+        def Shader "DiffuseTexture" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdUVTexture"
+            float4 inputs:fallback = (1, 1, 1, 1)
+            prepend asset inputs:file.connect = </Materials/mat_0.inputs:DiffuseTexture>
+            token inputs:sourceColorSpace = "auto"
+            prepend float2 inputs:st.connect = </Materials/mat_0/Primvar_st_float2.outputs:result>
+            token inputs:wrapS = "repeat"
+            prepend token inputs:wrapS.connect = </Materials/mat_0.inputs:wrapMode>
+            token inputs:wrapT = "repeat"
+            prepend token inputs:wrapT.connect = </Materials/mat_0.inputs:wrapMode>
+            float3 outputs:rgb
+        }
+
+        def Shader "Primvar_st_float2" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPrimvarReader_float2"
+            string inputs:varname = "st"
+            float2 outputs:result
+        }
+    }
+
+    def Material "mat_0_1"
+    {
+        asset inputs:DiffuseTexture = @../Textures/image0_1.png@
+        float inputs:metallic = 0
+        float inputs:opacity = 1
+        float inputs:roughness = 0.5
+        token inputs:wrapMode = "repeat"
+        token outputs:displacement (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:displacement.connect = </Materials/mat_0_1/PreviewSurface.outputs:displacement>
+        token outputs:surface (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:surface.connect = </Materials/mat_0_1/PreviewSurface.outputs:surface>
+        token outputs:volume (
+            displayGroup = "Outputs"
+        )
+
+        def Shader "PreviewSurface" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPreviewSurface"
+            prepend color3f inputs:diffuseColor.connect = </Materials/mat_0_1/DiffuseTexture.outputs:rgb>
+            prepend float inputs:metallic.connect = </Materials/mat_0_1.inputs:metallic>
+            prepend float inputs:opacity.connect = </Materials/mat_0_1.inputs:opacity>
+            prepend float inputs:roughness.connect = </Materials/mat_0_1.inputs:roughness>
+            token outputs:displacement
+            token outputs:surface
+        }
+
+        def Shader "DiffuseTexture" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdUVTexture"
+            float4 inputs:fallback = (1, 1, 1, 1)
+            prepend asset inputs:file.connect = </Materials/mat_0_1.inputs:DiffuseTexture>
+            token inputs:sourceColorSpace = "auto"
+            prepend float2 inputs:st.connect = </Materials/mat_0_1/Primvar_st_float2.outputs:result>
+            token inputs:wrapS = "repeat"
+            prepend token inputs:wrapS.connect = </Materials/mat_0_1.inputs:wrapMode>
+            token inputs:wrapT = "repeat"
+            prepend token inputs:wrapT.connect = </Materials/mat_0_1.inputs:wrapMode>
+            float3 outputs:rgb
+        }
+
+        def Shader "Primvar_st_float2" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPrimvarReader_float2"
+            string inputs:varname = "st"
+            float2 outputs:result
+        }
+    }
+
+    def Material "mat_0_2"
+    {
+        asset inputs:DiffuseTexture = @../Textures/image0_2.png@
+        float inputs:metallic = 0
+        float inputs:opacity = 1
+        float inputs:roughness = 0.5
+        token inputs:wrapMode = "repeat"
+        token outputs:displacement (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:displacement.connect = </Materials/mat_0_2/PreviewSurface.outputs:displacement>
+        token outputs:surface (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:surface.connect = </Materials/mat_0_2/PreviewSurface.outputs:surface>
+        token outputs:volume (
+            displayGroup = "Outputs"
+        )
+
+        def Shader "PreviewSurface" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPreviewSurface"
+            prepend color3f inputs:diffuseColor.connect = </Materials/mat_0_2/DiffuseTexture.outputs:rgb>
+            prepend float inputs:metallic.connect = </Materials/mat_0_2.inputs:metallic>
+            prepend float inputs:opacity.connect = </Materials/mat_0_2.inputs:opacity>
+            prepend float inputs:roughness.connect = </Materials/mat_0_2.inputs:roughness>
+            token outputs:displacement
+            token outputs:surface
+        }
+
+        def Shader "DiffuseTexture" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdUVTexture"
+            float4 inputs:fallback = (1, 1, 1, 1)
+            prepend asset inputs:file.connect = </Materials/mat_0_2.inputs:DiffuseTexture>
+            token inputs:sourceColorSpace = "auto"
+            prepend float2 inputs:st.connect = </Materials/mat_0_2/Primvar_st_float2.outputs:result>
+            token inputs:wrapS = "repeat"
+            prepend token inputs:wrapS.connect = </Materials/mat_0_2.inputs:wrapMode>
+            token inputs:wrapT = "repeat"
+            prepend token inputs:wrapT.connect = </Materials/mat_0_2.inputs:wrapMode>
+            float3 outputs:rgb
+        }
+
+        def Shader "Primvar_st_float2" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPrimvarReader_float2"
+            string inputs:varname = "st"
+            float2 outputs:result
+        }
+    }
+
+    def Material "mat_0_3"
+    {
+        asset inputs:DiffuseTexture = @../Textures/image0_3.png@
+        float inputs:metallic = 0
+        float inputs:opacity = 1
+        float inputs:roughness = 0.5
+        token inputs:wrapMode = "repeat"
+        token outputs:displacement (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:displacement.connect = </Materials/mat_0_3/PreviewSurface.outputs:displacement>
+        token outputs:surface (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:surface.connect = </Materials/mat_0_3/PreviewSurface.outputs:surface>
+        token outputs:volume (
+            displayGroup = "Outputs"
+        )
+
+        def Shader "PreviewSurface" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPreviewSurface"
+            prepend color3f inputs:diffuseColor.connect = </Materials/mat_0_3/DiffuseTexture.outputs:rgb>
+            prepend float inputs:metallic.connect = </Materials/mat_0_3.inputs:metallic>
+            prepend float inputs:opacity.connect = </Materials/mat_0_3.inputs:opacity>
+            prepend float inputs:roughness.connect = </Materials/mat_0_3.inputs:roughness>
+            token outputs:displacement
+            token outputs:surface
+        }
+
+        def Shader "DiffuseTexture" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdUVTexture"
+            float4 inputs:fallback = (1, 1, 1, 1)
+            prepend asset inputs:file.connect = </Materials/mat_0_3.inputs:DiffuseTexture>
+            token inputs:sourceColorSpace = "auto"
+            prepend float2 inputs:st.connect = </Materials/mat_0_3/Primvar_st_float2.outputs:result>
+            token inputs:wrapS = "repeat"
+            prepend token inputs:wrapS.connect = </Materials/mat_0_3.inputs:wrapMode>
+            token inputs:wrapT = "repeat"
+            prepend token inputs:wrapT.connect = </Materials/mat_0_3.inputs:wrapMode>
+            float3 outputs:rgb
+        }
+
+        def Shader "Primvar_st_float2" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPrimvarReader_float2"
+            string inputs:varname = "st"
+            float2 outputs:result
+        }
+    }
+
+    def Material "mat_0_4"
+    {
+        asset inputs:DiffuseTexture = @../Textures/image0_4.png@
+        float inputs:metallic = 0
+        float inputs:opacity = 1
+        float inputs:roughness = 0.5
+        token inputs:wrapMode = "repeat"
+        token outputs:displacement (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:displacement.connect = </Materials/mat_0_4/PreviewSurface.outputs:displacement>
+        token outputs:surface (
+            displayGroup = "Outputs"
+        )
+        prepend token outputs:surface.connect = </Materials/mat_0_4/PreviewSurface.outputs:surface>
+        token outputs:volume (
+            displayGroup = "Outputs"
+        )
+
+        def Shader "PreviewSurface" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPreviewSurface"
+            prepend color3f inputs:diffuseColor.connect = </Materials/mat_0_4/DiffuseTexture.outputs:rgb>
+            prepend float inputs:metallic.connect = </Materials/mat_0_4.inputs:metallic>
+            prepend float inputs:opacity.connect = </Materials/mat_0_4.inputs:opacity>
+            prepend float inputs:roughness.connect = </Materials/mat_0_4.inputs:roughness>
+            token outputs:displacement
+            token outputs:surface
+        }
+
+        def Shader "DiffuseTexture" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdUVTexture"
+            float4 inputs:fallback = (1, 1, 1, 1)
+            prepend asset inputs:file.connect = </Materials/mat_0_4.inputs:DiffuseTexture>
+            token inputs:sourceColorSpace = "auto"
+            prepend float2 inputs:st.connect = </Materials/mat_0_4/Primvar_st_float2.outputs:result>
+            token inputs:wrapS = "repeat"
+            prepend token inputs:wrapS.connect = </Materials/mat_0_4.inputs:wrapMode>
+            token inputs:wrapT = "repeat"
+            prepend token inputs:wrapT.connect = </Materials/mat_0_4.inputs:wrapMode>
+            float3 outputs:rgb
+        }
+
+        def Shader "Primvar_st_float2" (
+            apiSchemas = ["NodeDefAPI"]
+        )
+        {
+            token info:id = "UsdPrimvarReader_float2"
+            string inputs:varname = "st"
+            float2 outputs:result
+        }
+    }
+}
+

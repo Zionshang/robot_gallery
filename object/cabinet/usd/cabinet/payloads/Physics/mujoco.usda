@@ -1,0 +1,313 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "link_robot"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpvoekw3q9/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/usdex_cabinet/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/temp_cabinet/cabinet.usd
+
+
+Generated from Composed Stage of root layer /home/zishang/robot_gallery/object/cabinet/usd/cabinet/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    subLayers = [
+        @./physics.usda@
+    ]
+    upAxis = "Z"
+)
+
+over "link_robot"
+{
+    over "Physics"
+    {
+        def MjcActuator "door_joint_1_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -0.1745329201221466, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 50
+            uniform double mjc:forceRange:min = -50
+            uniform double[] mjc:gainPrm = [0.1745329201221466, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </link_robot/Physics/door_joint_1>
+        }
+
+        def MjcActuator "drawer_joint_1_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -10, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 50
+            uniform double mjc:forceRange:min = -50
+            uniform double[] mjc:gainPrm = [10, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </link_robot/Physics/drawer_joint_1>
+        }
+
+        def MjcActuator "drawer_joint_2_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -10, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 50
+            uniform double mjc:forceRange:min = -50
+            uniform double[] mjc:gainPrm = [10, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </link_robot/Physics/drawer_joint_2>
+        }
+
+        def MjcActuator "drawer_joint_3_actuator"
+        {
+            uniform double[] mjc:biasPrm = [0, 0, -10, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:biasType = "affine"
+            uniform double mjc:forceRange:max = 50
+            uniform double mjc:forceRange:min = -50
+            uniform double[] mjc:gainPrm = [10, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+            uniform token mjc:gainType = "fixed"
+            custom rel mjc:target
+            prepend rel mjc:target = </link_robot/Physics/drawer_joint_3>
+        }
+
+        over "root_joint"
+        {
+        }
+
+        over "door_joint_1" (
+            delete apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+        }
+
+        over "drawer_joint_1" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "drawer_joint_2" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+
+        over "drawer_joint_3" (
+            delete apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+        }
+    }
+
+    over "Geometry"
+    {
+        over "base_0"
+        {
+            over "door_1"
+            {
+                over "door_1"
+                {
+                }
+
+                over "door_panel_collision"
+                {
+                }
+
+                over "door_handle_grip"
+                {
+                }
+
+                over "door_handle_lower_mount"
+                {
+                }
+
+                over "door_handle_upper_mount"
+                {
+                }
+            }
+
+            over "drawer_1"
+            {
+                over "drawer_1"
+                {
+                }
+
+                over "drawer_1_front_panel"
+                {
+                }
+
+                over "drawer_1_bottom_panel"
+                {
+                }
+
+                over "drawer_1_back_panel"
+                {
+                }
+
+                over "drawer_1_left_panel"
+                {
+                }
+
+                over "drawer_1_right_panel"
+                {
+                }
+
+                over "drawer_1_handle_grip"
+                {
+                }
+
+                over "drawer_1_handle_left_mount"
+                {
+                }
+
+                over "drawer_1_handle_right_mount"
+                {
+                }
+            }
+
+            over "drawer_2"
+            {
+                over "drawer_2"
+                {
+                }
+
+                over "drawer_2_front_panel"
+                {
+                }
+
+                over "drawer_2_bottom_panel"
+                {
+                }
+
+                over "drawer_2_back_panel"
+                {
+                }
+
+                over "drawer_2_left_panel"
+                {
+                }
+
+                over "drawer_2_right_panel"
+                {
+                }
+
+                over "drawer_2_handle_grip"
+                {
+                }
+
+                over "drawer_2_handle_left_mount"
+                {
+                }
+
+                over "drawer_2_handle_right_mount"
+                {
+                }
+            }
+
+            over "drawer_3"
+            {
+                over "drawer_3"
+                {
+                }
+
+                over "drawer_3_front_panel"
+                {
+                }
+
+                over "drawer_3_bottom_panel"
+                {
+                }
+
+                over "drawer_3_back_panel"
+                {
+                }
+
+                over "drawer_3_left_panel"
+                {
+                }
+
+                over "drawer_3_right_panel"
+                {
+                }
+
+                over "drawer_3_handle_grip"
+                {
+                }
+
+                over "drawer_3_handle_left_mount"
+                {
+                }
+
+                over "drawer_3_handle_right_mount"
+                {
+                }
+            }
+
+            over "base_0"
+            {
+            }
+
+            over "cabinet_back_panel"
+            {
+            }
+
+            over "cabinet_left_side_panel"
+            {
+            }
+
+            over "cabinet_right_side_panel"
+            {
+            }
+
+            over "cabinet_center_panel"
+            {
+            }
+
+            over "cabinet_top_panel"
+            {
+            }
+
+            over "cabinet_bottom_panel"
+            {
+            }
+
+            over "cabinet_upper_drawer_rail"
+            {
+            }
+
+            over "cabinet_lower_drawer_rail"
+            {
+            }
+
+            over "cabinet_front_left_foot"
+            {
+            }
+
+            over "cabinet_front_right_foot"
+            {
+            }
+
+            over "cabinet_back_left_foot"
+            {
+            }
+
+            over "cabinet_back_right_foot"
+            {
+            }
+        }
+    }
+
+    over "Materials"
+    {
+    }
+
+    over "VisualMaterials"
+    {
+    }
+}
+

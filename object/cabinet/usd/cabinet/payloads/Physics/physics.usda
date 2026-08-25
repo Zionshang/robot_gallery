@@ -1,0 +1,429 @@
+#usda 1.0
+(
+    customLayerData = {
+        string creator = "URDF USD Converter v0.1.3"
+    }
+    defaultPrim = "link_robot"
+    doc = """Generated from Composed Stage of root layer /tmp/tmpvoekw3q9/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/usdex_cabinet/link_robot.usdc
+
+
+Generated from Composed Stage of root layer /tmp/urdf_import_cabinet_ldfuahr0/temp_cabinet/cabinet.usd
+
+
+Generated from Composed Stage of root layer /home/zishang/robot_gallery/object/cabinet/usd/cabinet/payloads/base.usd
+"""
+    kilogramsPerUnit = 1
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+over "link_robot"
+{
+    over "Geometry" (
+        prepend apiSchemas = ["PhysicsArticulationRootAPI", "NewtonArticulationRootAPI"]
+    )
+    {
+        bool newton:selfCollisionEnabled = 0
+
+        over "base_0" (
+            prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+        )
+        {
+            point3f physics:centerOfMass = (-0.008727, -0.000038, 0.004182)
+            float3 physics:diagonalInertia = (0.037944, 0.039906, 0.058038)
+            float physics:mass = 1
+            quatf physics:principalAxes = (-0.5, 0.5, 0.5, 0.5)
+
+            over "door_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (0.024528, 0.136634, -0.085056)
+                float3 physics:diagonalInertia = (0.006424, 0.021209, 0.027232)
+                float physics:mass = 1
+                quatf physics:principalAxes = (0.70710677, 0, 0.70710677, 0)
+
+                over "door_panel_collision" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "door_handle_grip" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "door_handle_lower_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "door_handle_upper_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+            }
+
+            over "drawer_1" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (-0.152186, -0.000001, 0.000001)
+                float3 physics:diagonalInertia = (0.008583, 0.009777, 0.014248)
+                float physics:mass = 1
+                quatf physics:principalAxes = (1, 0, 0, 0)
+
+                over "drawer_1_front_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_bottom_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_back_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_left_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_right_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_handle_grip" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_handle_left_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_1_handle_right_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+            }
+
+            over "drawer_2" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (-0.152252, 0.000037, -0.00001)
+                float3 physics:diagonalInertia = (0.008669, 0.009823, 0.014295)
+                float physics:mass = 1
+                quatf physics:principalAxes = (1, 0, 0, 0)
+
+                over "drawer_2_front_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_bottom_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_back_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_left_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_right_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_handle_grip" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_handle_left_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_2_handle_right_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+            }
+
+            over "drawer_3" (
+                prepend apiSchemas = ["PhysicsRigidBodyAPI", "PhysicsMassAPI"]
+            )
+            {
+                point3f physics:centerOfMass = (-0.151711, 0.000001, 0.000008)
+                float3 physics:diagonalInertia = (0.009102, 0.010249, 0.014192)
+                float physics:mass = 1
+                quatf physics:principalAxes = (1, 0, 0, 0)
+
+                over "drawer_3_front_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_bottom_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_back_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_left_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_right_panel" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_handle_grip" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_handle_left_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+
+                over "drawer_3_handle_right_mount" (
+                    prepend apiSchemas = ["NewtonCollisionAPI"]
+                )
+                {
+                }
+            }
+
+            over "cabinet_back_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_left_side_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_right_side_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_center_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_top_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_bottom_panel" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_upper_drawer_rail" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_lower_drawer_rail" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_front_left_foot" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_front_right_foot" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_back_left_foot" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+
+            over "cabinet_back_right_foot" (
+                prepend apiSchemas = ["NewtonCollisionAPI"]
+            )
+            {
+            }
+        }
+    }
+
+    over "Physics"
+    {
+        def PhysicsRevoluteJoint "door_joint_1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:angular", "PhysicsJointStateAPI:angular"]
+        )
+        {
+            float drive:angular:physics:damping = 0.17453292
+            float drive:angular:physics:maxForce = 50
+            float drive:angular:physics:stiffness = 0
+            uniform token drive:angular:physics:type = "force"
+            uniform token physics:axis = "Z"
+            custom rel physics:body0
+            prepend rel physics:body0 = </link_robot/Geometry/base_0>
+            custom rel physics:body1
+            prepend rel physics:body1 = </link_robot/Geometry/base_0/door_1>
+            point3f physics:localPos0 = (0.119816, -0.275279, 0.104384)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+            float physics:lowerLimit = -79.012825
+            float physics:upperLimit = 0
+            custom float urdf:limit:effort = 50
+            custom float urdf:limit:velocity = 1
+        }
+
+        def PhysicsPrismaticJoint "drawer_joint_1" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 10
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            prepend rel physics:body0 = </link_robot/Geometry/base_0>
+            custom rel physics:body1
+            prepend rel physics:body1 = </link_robot/Geometry/base_0/drawer_1>
+            point3f physics:localPos0 = (0.164706, 0.139857, 0.193753)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.009600968, 0, -0.17194419, -0.9850599)
+            quatf physics:localRot1 = (0.009600968, 0, -0.17194419, -0.9850599)
+            float physics:lowerLimit = -0.22
+            float physics:upperLimit = 0
+            custom float urdf:limit:effort = 50
+            custom float urdf:limit:velocity = 0.546426
+        }
+
+        def PhysicsPrismaticJoint "drawer_joint_2" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 10
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            prepend rel physics:body0 = </link_robot/Geometry/base_0>
+            custom rel physics:body1
+            prepend rel physics:body1 = </link_robot/Geometry/base_0/drawer_2>
+            point3f physics:localPos0 = (0.165042, 0.14016, 0.027481)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.007778092, 0, -0.43559647, -0.9001084)
+            quatf physics:localRot1 = (0.007778092, 0, -0.43559647, -0.9001084)
+            float physics:lowerLimit = -0.22
+            float physics:upperLimit = 0
+            custom float urdf:limit:effort = 50
+            custom float urdf:limit:velocity = 0.546421
+        }
+
+        def PhysicsPrismaticJoint "drawer_joint_3" (
+            prepend apiSchemas = ["PhysicsDriveAPI:linear", "PhysicsJointStateAPI:linear"]
+        )
+        {
+            float drive:linear:physics:damping = 10
+            float drive:linear:physics:maxForce = 50
+            float drive:linear:physics:stiffness = 0
+            uniform token drive:linear:physics:type = "force"
+            uniform token physics:axis = "X"
+            custom rel physics:body0
+            prepend rel physics:body0 = </link_robot/Geometry/base_0>
+            custom rel physics:body1
+            prepend rel physics:body1 = </link_robot/Geometry/base_0/drawer_3>
+            point3f physics:localPos0 = (0.163554, 0.139967, -0.145939)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (0.004762307, 0, -0.20281157, -0.97920614)
+            quatf physics:localRot1 = (0.004762307, 0, -0.20281157, -0.97920614)
+            float physics:lowerLimit = -0.22
+            float physics:upperLimit = 0
+            custom float urdf:limit:effort = 50
+            custom float urdf:limit:velocity = 0.546414
+        }
+
+        def PhysicsFixedJoint "root_joint"
+        {
+            custom rel physics:body0
+            prepend rel physics:body0 = </link_robot>
+            custom rel physics:body1
+            prepend rel physics:body1 = </link_robot/Geometry/base_0>
+            point3f physics:localPos0 = (0, 0, 0)
+            point3f physics:localPos1 = (0, 0, 0)
+            quatf physics:localRot0 = (1, 0, 0, 0)
+            quatf physics:localRot1 = (1, 0, 0, 0)
+        }
+    }
+}
+
