@@ -37,9 +37,9 @@
         <joint name="door_joint_1" range="-1.37903 0" actuatorfrcrange="-50 50" />
         <geom name="door_1_visual_000_000" pos="-0.119816 0.275279 -0.104384" quat="1 0 0 0" type="mesh" contype="0" conaffinity="0" group="2" density="0" mesh="door_1_73a3fc2b_part_000" material="dae_material_001" />
         <geom name="door_panel_collision" size="0.007 0.137 0.2515" pos="0.0202 0.1366 -0.085" type="box" group="3" />
-        <geom name="door_handle_grip" size="0.0045 0.008 0.055" pos="0.046 0.249724 0.061438" type="box" group="3" />
-        <geom name="door_handle_lower_mount" size="0.0115 0.008 0.006" pos="0.0345 0.249724 0.004438" type="box" group="3" />
-        <geom name="door_handle_upper_mount" size="0.0115 0.008 0.006" pos="0.0345 0.249724 0.118438" type="box" group="3" />
+        <geom name="door_handle_grip" size="0.0045 0.006 0.055" pos="0.046 0.249724 0.061438" type="box" group="3" />
+        <geom name="door_handle_lower_mount" size="0.0115 0.006 0.006" pos="0.0345 0.249724 0.004438" type="box" group="3" />
+        <geom name="door_handle_upper_mount" size="0.0115 0.006 0.006" pos="0.0345 0.249724 0.118438" type="box" group="3" />
       </body>
       <body name="drawer_1" pos="0.164706 0.139857 0.193753">
         <inertial pos="-0.152186 -1e-06 1e-06" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014248 0.009777 0.008583" />
@@ -50,9 +50,9 @@
         <geom name="drawer_1_back_panel" size="0.0035 0.117 0.055" pos="-0.3035 0.009 0.004" type="box" group="3" />
         <geom name="drawer_1_left_panel" size="0.135 0.003 0.055" pos="-0.169 -0.107 0.004" type="box" group="3" />
         <geom name="drawer_1_right_panel" size="0.135 0.003 0.055" pos="-0.169 0.126 0.004" type="box" group="3" />
-        <geom name="drawer_1_handle_grip" size="0.004 0.0505 0.0085" pos="-0.003 0.00972 0.004263" type="box" group="3" />
-        <geom name="drawer_1_handle_left_mount" size="0.0105 0.007 0.0085" pos="-0.0115 -0.03878 0.004263" type="box" group="3" />
-        <geom name="drawer_1_handle_right_mount" size="0.0105 0.007 0.0085" pos="-0.0115 0.05822 0.004263" type="box" group="3" />
+        <geom name="drawer_1_handle_grip" size="0.004 0.0505 0.005" pos="-0.003 0.00972 0.004263" type="box" group="3" />
+        <geom name="drawer_1_handle_left_mount" size="0.0105 0.007 0.007" pos="-0.0115 -0.03878 0.004263" type="box" group="3" />
+        <geom name="drawer_1_handle_right_mount" size="0.0105 0.007 0.007" pos="-0.0115 0.05822 0.004263" type="box" group="3" />
       </body>
       <body name="drawer_2" pos="0.165042 0.14016 0.027481">
         <inertial pos="-0.152252 3.7e-05 -1e-05" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014295 0.009823 0.008669" />
@@ -63,9 +63,9 @@
         <geom name="drawer_2_back_panel" size="0.0035 0.1165 0.056" pos="-0.304 0.009 -0.002" type="box" group="3" />
         <geom name="drawer_2_left_panel" size="0.135 0.003 0.056" pos="-0.169 -0.107 -0.002" type="box" group="3" />
         <geom name="drawer_2_right_panel" size="0.135 0.003 0.056" pos="-0.169 0.125 -0.002" type="box" group="3" />
-        <geom name="drawer_2_handle_grip" size="0.004 0.0475 0.006" pos="-0.003 0.009268 0.002335" type="box" group="3" />
-        <geom name="drawer_2_handle_left_mount" size="0.011 0.007 0.006" pos="-0.012 -0.036232 0.002335" type="box" group="3" />
-        <geom name="drawer_2_handle_right_mount" size="0.011 0.007 0.006" pos="-0.012 0.054768 0.002335" type="box" group="3" />
+        <geom name="drawer_2_handle_grip" size="0.004 0.0475 0.004" pos="-0.003 0.009268 0.002335" type="box" group="3" />
+        <geom name="drawer_2_handle_left_mount" size="0.011 0.007 0.0045" pos="-0.012 -0.036232 0.002335" type="box" group="3" />
+        <geom name="drawer_2_handle_right_mount" size="0.011 0.007 0.0045" pos="-0.012 0.054768 0.002335" type="box" group="3" />
       </body>
       <body name="drawer_3" pos="0.163554 0.139967 -0.145939">
         <inertial pos="-0.151711 1e-06 8e-06" quat="0 0.707107 0 0.707107" mass="1" diaginertia="0.014192 0.010249 0.009102" />
@@ -76,9 +76,9 @@
         <geom name="drawer_3_back_panel" size="0.0035 0.117 0.07" pos="-0.303 0.009 -0.003" type="box" group="3" />
         <geom name="drawer_3_left_panel" size="0.1355 0.003 0.07" pos="-0.169 -0.107 -0.003" type="box" group="3" />
         <geom name="drawer_3_right_panel" size="0.1355 0.003 0.07" pos="-0.169 0.125 -0.003" type="box" group="3" />
-        <geom name="drawer_3_handle_grip" size="0.004 0.048 0.0065" pos="-0.003 0.010112 0.018757" type="box" group="3" />
-        <geom name="drawer_3_handle_left_mount" size="0.0105 0.007 0.0065" pos="-0.0115 -0.035888 0.018757" type="box" group="3" />
-        <geom name="drawer_3_handle_right_mount" size="0.0105 0.007 0.0065" pos="-0.0115 0.056112 0.018757" type="box" group="3" />
+        <geom name="drawer_3_handle_grip" size="0.004 0.048 0.004" pos="-0.003 0.010112 0.018757" type="box" group="3" />
+        <geom name="drawer_3_handle_left_mount" size="0.0105 0.007 0.00525" pos="-0.0115 -0.035888 0.018757" type="box" group="3" />
+        <geom name="drawer_3_handle_right_mount" size="0.0105 0.007 0.00525" pos="-0.0115 0.056112 0.018757" type="box" group="3" />
       </body>
     </body>
   </worldbody>

@@ -106,19 +106,19 @@
     <collision name="door_handle_grip">
       <origin xyz="0.0460 0.249724 0.061438" rpy="0 0 0" />
       <geometry>
-        <box size="0.009 0.016 0.110" />
+        <box size="0.009 0.012 0.110" />
       </geometry>
     </collision>
     <collision name="door_handle_lower_mount">
       <origin xyz="0.0345 0.249724 0.004438" rpy="0 0 0" />
       <geometry>
-        <box size="0.023 0.016 0.012" />
+        <box size="0.023 0.012 0.012" />
       </geometry>
     </collision>
     <collision name="door_handle_upper_mount">
       <origin xyz="0.0345 0.249724 0.118438" rpy="0 0 0" />
       <geometry>
-        <box size="0.023 0.016 0.012" />
+        <box size="0.023 0.012 0.012" />
       </geometry>
     </collision>
   </link>
@@ -167,19 +167,19 @@
     <collision name="drawer_1_handle_grip">
       <origin xyz="-0.0030 0.009720 0.004263" rpy="0 0 0" />
       <geometry>
-        <box size="0.008 0.101 0.017" />
+        <box size="0.008 0.101 0.010" />
       </geometry>
     </collision>
     <collision name="drawer_1_handle_left_mount">
       <origin xyz="-0.0115 -0.038780 0.004263" rpy="0 0 0" />
       <geometry>
-        <box size="0.021 0.014 0.017" />
+        <box size="0.021 0.014 0.014" />
       </geometry>
     </collision>
     <collision name="drawer_1_handle_right_mount">
       <origin xyz="-0.0115 0.058220 0.004263" rpy="0 0 0" />
       <geometry>
-        <box size="0.021 0.014 0.017" />
+        <box size="0.021 0.014 0.014" />
       </geometry>
     </collision>
   </link>
@@ -228,19 +228,19 @@
     <collision name="drawer_2_handle_grip">
       <origin xyz="-0.0030 0.009268 0.002335" rpy="0 0 0" />
       <geometry>
-        <box size="0.008 0.095 0.012" />
+        <box size="0.008 0.095 0.008" />
       </geometry>
     </collision>
     <collision name="drawer_2_handle_left_mount">
       <origin xyz="-0.0120 -0.036232 0.002335" rpy="0 0 0" />
       <geometry>
-        <box size="0.022 0.014 0.012" />
+        <box size="0.022 0.014 0.009" />
       </geometry>
     </collision>
     <collision name="drawer_2_handle_right_mount">
       <origin xyz="-0.0120 0.054768 0.002335" rpy="0 0 0" />
       <geometry>
-        <box size="0.022 0.014 0.012" />
+        <box size="0.022 0.014 0.009" />
       </geometry>
     </collision>
   </link>
@@ -289,19 +289,19 @@
     <collision name="drawer_3_handle_grip">
       <origin xyz="-0.0030 0.010112 0.018757" rpy="0 0 0" />
       <geometry>
-        <box size="0.008 0.096 0.013" />
+        <box size="0.008 0.096 0.008" />
       </geometry>
     </collision>
     <collision name="drawer_3_handle_left_mount">
       <origin xyz="-0.0115 -0.035888 0.018757" rpy="0 0 0" />
       <geometry>
-        <box size="0.021 0.014 0.013" />
+        <box size="0.021 0.014 0.0105" />
       </geometry>
     </collision>
     <collision name="drawer_3_handle_right_mount">
       <origin xyz="-0.0115 0.056112 0.018757" rpy="0 0 0" />
       <geometry>
-        <box size="0.021 0.014 0.013" />
+        <box size="0.021 0.014 0.0105" />
       </geometry>
     </collision>
   </link>
